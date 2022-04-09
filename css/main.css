@@ -4,10 +4,11 @@
 }
 /*estilos del main*/
 body{
-    background-color:#F0F3F4;
+    background-image:linear-gradient(0deg, rgba(153,105,146,1) 0%, rgba(255,255,255,1) 100%);
 }
 
 header h1{
+    font-family: 'Cinzel', serif;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -18,14 +19,14 @@ nav ul{
 }
 
 nav ul li a{
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
 nav ul li{
-    color: white;
+    color: black;
     font-weight: bolder;
-    background-color:#A3E4D7;
+    background-color: #C39BD3;
     list-style: none;
     margin: 0.5rem;
     padding: 0.3rem;
@@ -41,6 +42,7 @@ nav ul li{
 }
 
 .mainP{
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 20px;
     margin-left: 5px;
@@ -67,8 +69,9 @@ nav ul li{
 }
 
 .sectionParrafo{
+    color:#F0F3F4;
     display: flex;
-    margin-top: 5px;
+    margin-top: 90px;
 }
 
 .parrafo{
@@ -80,6 +83,7 @@ nav ul li{
 }
 
 footer p{
+    color: #E6B0AA ;
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
@@ -115,6 +119,7 @@ footer p{
         margin-left: 15px;
         margin-bottom: 15px;
     }
+
 }
 
 @media only screen and (min-width: 1024px){
@@ -174,7 +179,7 @@ footer p{
 
     .sectionParrafo{
         display: flex;
-        margin-top: 250px;
+        margin-top: 400px;
     }
 
     section{
@@ -192,22 +197,20 @@ footer p{
 
 .mainPiercings{
     display: grid;
-    grid-template-areas: "nav nav nav nav"
-                        "sectionMaterial sectionMaterial sectionMaterial sectionMaterial"
-                        "sectionPiezas sectionPiezas sectionPiezas sectionPiezas"
-                        "galeria galeria galeria galeria"; 
+    grid-template-areas: "nav nav"
+                        "sectionMaterial sectionMaterial"
+                        "sectionPiezas sectionPiezas"
+                        "galeria galeria"; 
     justify-content: start;
 }
 .navPiercing{
+    width: 200px;
+    display: flex;
     grid-area: nav;
 }
 
-nav ul{
-    display: flex;
-    justify-content: center;
-}
-
 nav ul h2{
+    color: black;
     padding: 10px;
 }
 
@@ -216,32 +219,53 @@ main nav ul li a{
 }
 
 .sectionMaterial{
+    display: flex;
     grid-area: sectionMaterial;
+    display: inline-block;
+}
+.parrafoMat{
+    width: 210px;
+    display:flex;
 }
 
 .sectionPiezas{
+    width: 200px;
     grid-area: sectionPiezas;
+    display: flex;
+    display: inline-block;
 }
+
+.galeria{
+    grid-area: galeria;
+    display: flex;
+    display: inline-block;
+}
+
 /*estilos del menu fijo*/
 .irHome{
-    color: white;
-    background-color: #A3E4D7;
+    color: black;
+    background-color: #C39BD3;
 }
+
 h2 a{
     padding: 5px;
     color: white;
     text-decoration: none;
     border-radius: 100px;
-    background-color: #A3E4D7;
+    background-color: #C39BD3;
 }
 .pagPiercing{
-    color: white;
-    background-color: #A3E4D7;
+    color: black;
+    background-color: #C39BD3;
     border-radius: 100px;
     display: flex;
     align-items: center;
     padding: 5px;
 }
+main nav ul h2 a{
+    color: black;
+}
+
 /*estilos del contenido*/
 .sectionMaterial{
     font-family: Arial, Helvetica, sans-serif;
@@ -254,13 +278,7 @@ h2 a{
     font-weight: bolder;
 }
 .parrafoMat{
-    margin-left: 5px;
-}
-
-.subtPiezas{
-    display: flex;
-    grid-area: sectorPiezas;
-    background-color: grey;
+    margin: 5px;
 }
 
 .sectionPiezas{
@@ -269,14 +287,21 @@ h2 a{
     margin-top: 10px;
 }
 
+.subtPiezas{
+    background-color: #C39BD3;
+    color: black;
+    display: flex;
+    /*no consigo acomodar los ''botones'' para que queden centrados y se vean todos*/
+}
+
 .galeria{
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 5px;
+    margin: 5px;
     grid-area: galeria;
 }
 section div img{
     margin-top: 10px;
-    margin-left: 5px;
+    margin-left: 10px;
     width: 95%;
 }
 
@@ -284,7 +309,6 @@ footer div a{
     text-decoration: none;
     color: white;
     border-radius: 100px;
-    background-color: black;
     margin-left: 5px;
 }
 
@@ -292,23 +316,45 @@ footer div a{
 
     .mainPiercings{
         display: grid;
-        grid-template-areas: "nav nav nav nav"
-                            "sectionMaterial sectionMaterial sectionMaterial sectionMaterial"
-                            "sectionPiezas sectionPiezas sectionPiezas sectionPiezas"
-                            "galeria galeria galeria galeria"; 
+        grid-template-areas: "nav nav"
+                            "sectionMaterial sectionMaterial"
+                            "sectionPiezas sectionPiezas"
+                            "galeria galeria"; 
         justify-content: center;
     }
     .navPiercing{
-        margin-left: 50px;
-        margin-bottom: 15px;
+        grid-area: nav;
+        display: grid;
+        justify-content: start;
+        margin-left: 60px;
+    }
+
+    .subtPiercing{
+        font-size: 1.5rem;
+    }
+    .sectionMaterial{
+        width: 300px;
+        margin: 10px;
+        font-size: 1.1rem;
+    }
+    .parrafoMat{
+        width: 270px;
+        margin: 10px;
+    }
+    .subtPiezas{
+        font-size: 1.1rem;
+    }
+
+    .sectionPiezas{
+        font-size: 1.5rem;
     }
 
     table tr td h3{
-        margin-top: 10px;
+        margin-top: 5px;
     }
 
     section nav ul li{
-        margin: 15px;
+        margin: 20px;
     }
 
     section div img{
@@ -338,7 +384,6 @@ footer div a{
     .subtPiezas{
         display: flex;
         grid-area: sectorPiezas;
-        background-color: grey;
         margin-right: 70px;
     }
     
