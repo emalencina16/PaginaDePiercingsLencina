@@ -4,9 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--link de tipografia-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&display=swap" rel="stylesheet">
+    <!--link de animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--link de css-->
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Citas</title>
 </head>
 <body>
     
+    <header id="irHeader">    
+        <h1 class="animate__animated animate__pulse">KÖrper</h1>
+    </header>
+
+    
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html" class="irHome">
+                <h2>Ir a home</h2>
+                </a>
+            </li>
+             
+            <li>
+                <a href="piercings.html">
+                <h2>Piercings </h2>
+                </a> 
+            </li>
+            <li><h2>Citas</h2></li>
+            <li>
+                <a href="Dudas.html">
+                <h2>Dudas</h2>
+                </a>
+            </li>
+            <li>
+                <a href="TrabajosRealizados.html">
+                <h2>Trabajos realizados </h2>
+                </a>
+            </li>
+        </ul>  
+    </nav>
+        
+    <div class="contenedorCitas">
+        <main class="subtCitas"><h3>Para coordinar el encuentro completa el siguiente formulario y te enviaremos por mail la fecha del turno</h3></main>
+        <form action="" class="formulario">
+            <fieldset>
+                <legend>
+                    Formulario
+                </legend>
+                <div>
+                    <label for="tipoDePerforacion">Selecciona tu perforacion</label>
+                    <select name="tipoDePerforacion" id="">
+                        <option value="Perforacion">Perforacion</option>
+                        <option value="Genitales">Genitales</option>
+                        <option value="Microdermal">Microdermal</option>
+                    </select>
+                </div>
+            
+                <div>
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" name="nombre" placeholder="click para completar">
+                </div>
+            
+                <div>
+                    <label for="edad">Edad</label>
+                    <input type="text" name="edad" placeholder="click para completar">
+                </div>
+            
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="click para completar">
+                </div>
+                    
+                <div>
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+            </fieldset>
+        </form>
+        
+        <footer class="footerC">
+            <p><h4>Todos los derechos reservados | Diseño web: <span> Emalencina16 </span></h4></p>   
+            <div>
+                <a href="#irHeader">
+                    Volver a menu
+                </a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

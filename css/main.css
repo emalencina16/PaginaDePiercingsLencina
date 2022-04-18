@@ -195,6 +195,9 @@ footer p{
         font-size: 1.1rem;
         margin-top: 10px;
     }
+    .pFooter{
+        color: #E6B0AA;
+    }
 }
 
 /*estilos pag Piercings*/
@@ -257,30 +260,34 @@ nav ul li{
     margin-left: 5px;
 }
 
+h3{
+    margin: 10px;
+}
+
 h4{
-    margin: 8px;
-    color:rgb(180, 90, 90);
+    margin: 10px;
+    color:rgb(235, 130, 130);
 }
 
 .subtPiezas{
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(170, 69, 44);
+    color: #E6B0AA;
     font-size: 1rem;
     margin-left: 5px;
     margin-bottom: 10px;
+    margin-top: 15px;
 }
 
 .botonP{
     font-weight: bolder;
     background-color: #be7cbb;
     color: white;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 /*transformacion de botones*/
 .botonP:hover{
     transform: scale(1.2);
 }
-
 footer div a{
     text-decoration: none;
     color: white;
@@ -365,7 +372,84 @@ footer div a{
     section nav ul li{
  
     }
-    
+
+    footer p{
+        color: rgb(170, 69, 44);
+    }
 }
 
+/* estilos pag citas */
 
+.contenedorCitas{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "subtCitas subtCitas subtCitas subtCitas"
+                        "formulario formulario formulario formulario"
+                        "footerC footerC footerC footerC";
+}
+
+.subtCitas{
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-area: subtCitas;
+}
+
+.formulario{
+    margin: 10px;
+    grid-area: formulario;
+}
+
+.footerC{
+    margin-top: 100px;
+    grid-area: footerC;
+}
+footer h4{
+    text-align: center;
+    color:#E6B0AA;
+}
+
+/* estilos pag dudas */
+
+.contenedorDudas{
+    margin: 10px;
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "mainDudas mainDudas"
+                        "footerDudas footerDudas";
+}
+
+.mainDudas{
+    grid-area: mainDudas;
+}
+
+.footerDudas{
+    grid-area: footerDudas;
+}
+
+.subtDudas{
+    color: rgb(235, 130, 130);
+}
+
+.cInstagram{
+    text-decoration: none;
+    color: #E6B0AA;
+}
+
+@media only screen and (min-width: 600px){
+    
+    .mainDudas{
+        margin-top: 20px;
+    }
+
+    .footerDudas{
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    body{
+        font-size: 1.2rem;
+    }
+}
