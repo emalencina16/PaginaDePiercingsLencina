@@ -1,455 +1,51 @@
-*{
-    padding: 0%;
-    margin: 0%;
-}
-/*estilos del main*/
-body{
-    background-image:linear-gradient(0deg, rgba(153,105,146,1) 0%, rgba(255,255,255,1) 100%);
-}
+header h1 {
+  background-color: #DBA1FF;
+  text-align: center; }
 
-header h1{
-    font-family: 'Cinzel', serif;
-    margin-bottom: 10px;
-    text-align: center;
-}
-nav ul{
-    justify-content: center;
-    display: flex;
-}
-
-nav ul a{
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    display: flex;
-}
-nav ul li h2{
-    color: white;
-}
-
-/*transformacion del menu*/
-
-.mainMenu{
-    height: 80vh;
-    display: grid;
-    grid-template-areas: "mainP mainP"
-                        "imagen1 imagen1";
-    justify-content: center;
-}
-
-.mainP{
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 20px;
-    margin-left: 5px;
-    margin-bottom: 10px;
-    grid-area: mainP;
-}
-.imagen1{
-    grid-area: imagen1;
-    display: flex;
-    height:470px;
-    width: 450px;
-    margin-left: 5px;
-}
-.img2{
-    display:none;
-}
-.img3{
-    display: none;
-}
-.img4{
-    display: none;
-}
-.img5{
-    display: none;
-}
-
-.sectionParrafo{
-    color:#F0F3F4;
-    display: flex;
-    margin-top: 90px;
-}
-
-.parrafo{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    display: block;
-    margin-left: 4px;
-    margin-bottom: 5px;
-}
-
-footer p{
-    color: #E6B0AA ;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-@media only screen and (min-width: 600px){
-    
-    nav ul li a{
-        font-size: 1rem;
-    }
-
-    .mainMenu{
-        height: 80vh;
-        display: grid;
-        grid-template-areas: "mainP mainP"
-                            "imagen1 imagen1";
-        justify-content: center;
-        font-size: 1.2rem;
-    }
-    
-    .mainP{
-        margin-left: 15px;
-    }
-
-    .imagen1{
-        grid-area: imagen1;
-        display: flex;
-        width: 95%;
-        justify-content: center;
-    }
-
-    .parrafo{
-        font-size: 1.2rem;
-        text-align: center;
-        margin-left: 10px;
-        margin-bottom: 15px;
-    }
-    .footer{
-        font-size: 1.2rem;
-    }
-
-}
-
-@media only screen and (min-width: 1024px){
-
-    header{
-        font-size: 1.3rem;
-    }
-
-    nav ul li a{
-        font-size: 1.2rem;
-        display: flex;
-    }
-
-    .mainMenu{
-        font-size: 1.3rem;
-        height: 80vh;
-        display: grid;
-        grid-template-areas: "mainP mainP"
-                            "img2 img3"
-                            "img4 img5"
-                            "parrafo parrafo";
-        justify-content: start;
-    }
-
-    .mainP{
-        margin: 10px;
-    }
-
-    .imagen1{
-        display: none;
-    }
-    main div img{
-        margin: 5px;
-        width: 97%;
-    }
-    .img2{
-        display: block;
-        grid-area: img2;
-        display: flex;
-
-    }
-
-    .img3{
-        display: block;
-        grid-area: img3;
-        display: flex;
-    }
-    .img4{
-        display: block;
-        grid-area: img4;
-        display: flex;
-    }
-    .img5{
-        display: block;
-        grid-area: img5;
-        display: flex;
-    }
-
-    .sectionParrafo{
-        justify-content: center;
-        display: flex;
-        margin-top: 400px;
-    }
-
-    section{
-        font-size: 1.3rem;
-        margin-top: 230px;
-    }
-
-    .footer{
-        font-size: 1.1rem;
-        margin-top: 10px;
-    }
-    .pFooter{
-        color: #E6B0AA;
-    }
-}
-
-/*estilos pag Piercings*/
-
-.contenedor{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "mainP mainP mainP mainP"
-                        "sectionP sectionP sectionP sectionP"
-                        "footerP footerP footerP footerP";
-}
-
-.mainP{
-    grid-area: mainP;
-}
-.imgP{
-    display: none;
-}
-
-.sectionP{
-    margin-left: 10px;
-    grid-area: sectionP;
-}
-
-footer{
-    grid-area: footerP;
-}
-
-/*estilos del menu fijo*/
-nav ul li{
-    margin: 3px;
-    display: flex;
-    align-items: center;
-    background-color: #C39BD3;
+header nav ul {
+  display: flex;
+  justify-content: center; }
+  header nav ul li {
+    margin: 1px;
+    background-color: whitesmoke;
+    border-radius: 100px;
     list-style: none;
-    padding: 5px;
-    border-radius: 1rem;
-}
-.irHome{
-    display: flex;
-    color: white;
-    background-color: #C39BD3;
-}
+    text-align: center; }
+    header nav ul li:hover {
+      background-color: #EED6FD; }
+    header nav ul li a {
+      text-decoration: none;
+      color: black; }
 
-.pagPiercing{
-    color: white;
-    background-color: #C39BD3;
-    border-radius: 100px;
-}
+main p {
+  text-align: center;
+  margin: 5px;
+  font-family: Arial, Helvetica, sans-serif; }
 
-/*estilos del contenido*/
-.subtPiercing{
-    color: rgb(4, 15, 15);
-}
+main .img2 {
+  display: none; }
 
-.parrafoMat{
-    margin-top: 5px;
-    margin-left: 5px;
-}
+main .img3 {
+  display: none; }
 
-h3{
-    margin: 10px;
-}
+main .img4 {
+  display: none; }
 
-h4{
-    margin: 10px;
-    color:rgb(235, 130, 130);
-}
+main .img5 {
+  display: none; }
 
-.subtPiezas{
+main .img1 {
+  display: block;
+  display: flex;
+  height: 300px;
+  margin: 5px;
+  justify-content: center; }
+
+section p {
+  font-family: Arial, Helvetica, sans-serif; }
+
+footer {
+  background-color: whitesmoke; }
+  footer p {
     font-family: Arial, Helvetica, sans-serif;
-    color: #E6B0AA;
-    font-size: 1rem;
-    margin-left: 5px;
-    margin-bottom: 10px;
-    margin-top: 15px;
-}
-
-.botonP{
-    font-weight: bolder;
-    background-color: #be7cbb;
-    color: white;
-    margin-top: 30px;
-}
-/*transformacion de botones*/
-.botonP:hover{
-    transform: scale(1.2);
-}
-footer div a{
-    text-decoration: none;
-    color: white;
-    border-radius: 100px;
-    margin-left: 5px;
-}
-
-@media only screen and (min-width: 600px){
-
-    .contenedor{
-        height: 100vh;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: "mainP mainP mainP mainP"
-                            "sectionP sectionP sectionP sectionP"
-                            "footerP footerP footerP footerP";
-    }
-       
-    .parrafoMat{
-        width: 270px;
-        margin: 10px;
-    }
-    
-    .subtPiezas{
-        margin-top: 20px;
-        margin-left: 10px,
-    }
-
-    section nav ul li{
-        margin: 16px;
-    }
-
-}
-
-@media only screen and (min-width: 1024px){
-
-    .contenedor{
-        height: 100vh;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas: "mainP mainP imgP imgP"
-                            "sectionP sectionP imgP imgP"
-                            "sectionP sectionP imgP imgP"
-                            "footerP footerP footerP footerP";
-    }
-    
-    table tr td{
-        display: grid;
-    }
-
-    .imgP{
-        margin-top: 20px;
-        display: grid;
-        display: flex;
-        grid-area: imgP;
-        height: 70vh;
-        width: 75%;
-        justify-content: center;
-    }
-
-    h3{
-        margin-left: 10px;
-        margin-top: 10px;
-    }
-    .parrafoMat{
-        font-size: 1.3rem;
-        margin-left: 14px;
-        margin-left: 10px;
-    }
-
-    .sectionP{
-        display: grid;
-        margin-top: 50px;
-    }
-    
-    /*no entiendo porque la pagina tiene esos espacios, probe con varias propiedades en las siguientes etiquetas y no lo puedo acomodar, ademas es como si el footer y los botones me quedaran fuera de los colores de la pagina*/
-    .subtPiezas{
-
-    }
-
-    section nav ul li{
- 
-    }
-
-    footer p{
-        color: rgb(170, 69, 44);
-    }
-}
-
-/* estilos pag citas */
-
-.contenedorCitas{
-    height: 80vh;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "subtCitas subtCitas subtCitas subtCitas"
-                        "formulario formulario formulario formulario"
-                        "footerC footerC footerC footerC";
-}
-
-.subtCitas{
-    margin-top: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    grid-area: subtCitas;
-}
-
-.formulario{
-    margin: 10px;
-    grid-area: formulario;
-}
-
-.footerC{
-    margin-top: 100px;
-    grid-area: footerC;
-}
-footer h4{
-    text-align: center;
-    color:#E6B0AA;
-}
-
-/* estilos pag dudas */
-
-.contenedorDudas{
-    margin: 10px;
-    height: 80vh;
-    display: grid;
-    grid-template-areas: "mainDudas mainDudas"
-                        "footerDudas footerDudas";
-}
-
-.mainDudas{
-    grid-area: mainDudas;
-}
-
-.footerDudas{
-    grid-area: footerDudas;
-}
-
-.subtDudas{
-    color: rgb(235, 130, 130);
-}
-
-.cInstagram{
-    text-decoration: none;
-    color: #E6B0AA;
-}
-
-@media only screen and (min-width: 600px){
-    
-    .mainDudas{
-        margin-top: 20px;
-    }
-
-    .footerDudas{
-        margin-top: 100px;
-    }
-}
-
-@media only screen and (min-width: 1024px){
-    body{
-        font-size: 1.2rem;
-    }
-}
+    text-align: center; }
