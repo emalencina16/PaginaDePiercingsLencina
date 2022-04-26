@@ -1,21 +1,17 @@
+.mainP .subtP, .subtDudas {
+  display: inline-block;
+  border-radius: 100px; }
+
 header h1 {
+  padding: 5px;
+  border-radius: 100px;
   background-color: #DBA1FF;
   text-align: center; }
 
-header nav ul {
-  display: flex;
-  justify-content: center; }
-  header nav ul li {
-    margin: 1px;
-    background-color: whitesmoke;
-    border-radius: 100px;
-    list-style: none;
-    text-align: center; }
-    header nav ul li:hover {
-      background-color: #EED6FD; }
-    header nav ul li a {
-      text-decoration: none;
-      color: black; }
+header nav ul li {
+  border-radius: 100px; }
+  header nav ul li:hover {
+    background-color: #EED6FD; }
 
 main p {
   text-align: center;
@@ -42,10 +38,97 @@ main .img1 {
   justify-content: center; }
 
 section p {
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif; }
 
 footer {
   background-color: whitesmoke; }
-  footer p {
-    font-family: Arial, Helvetica, sans-serif;
+  footer .pFooter {
     text-align: center; }
+
+.contenedorP {
+  grid-template-areas: "mainP mainP" "sectionP sectionP" "footerP footerP"; }
+
+.mainP {
+  grid-area: mainP; }
+  .mainP .subtP {
+    color: #E346DC;
+    background-color: whitesmoke;
+    font-weight: bolder;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 25px;
+    margin-top: 20px; }
+  .mainP .parrafoA {
+    margin-top: 10px;
+    margin-left: 25px;
+    text-align: start; }
+
+.sectionP {
+  text-align: start;
+  font-family: Arial, Helvetica, sans-serif;
+  grid-area: sectionP; }
+  .sectionP a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: #a25ac4; }
+
+.footerP {
+  grid-area: footerP; }
+  .footerP p {
+    text-align: center; }
+  .footerP div a {
+    text-decoration: none;
+    color: darkgray; }
+
+.contenedorImg {
+  display: flex;
+  height: 480px;
+  justify-content: center; }
+
+.subtDudas {
+  color: #E346DC;
+  background-color: whitesmoke;
+  margin-left: 15px; }
+
+.pDudas {
+  margin-left: 15px;
+  text-align: start;
+  margin-bottom: 20px; }
+
+.redesI {
+  margin-left: 15px;
+  padding: 2px;
+  border-radius: 100px;
+  text-decoration: none;
+  color: black;
+  background-color: #cf2ccf; }
+
+.redesW {
+  margin-left: 15px;
+  padding: 2px;
+  border-radius: 100px;
+  display: inline-block;
+  background-color: #80f380;
+  text-align: start;
+  margin-top: 10px; }
+
+.subtCitas {
+  margin-left: 20px;
+  text-align: start; }
+
+.formularioC {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+footer p {
+  text-align: center; }
+
+footer div a {
+  text-decoration: none;
+  color: darkgray; }
+
+.parrafoTr {
+  font-weight: bolder; }

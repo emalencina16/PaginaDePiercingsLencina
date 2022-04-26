@@ -4,84 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trabajamos con titanio grado implante y tambien acero quirurgico, te acompañamos durante todo el proceso">
+    <meta name="keywords"  content="PIEZAS, PIERCINGS, BULLS, CLICKERS, AROS, BARRAS">
     <!--link de tipografia-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&display=swap" rel="stylesheet">
+    <!--link de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--link de animate.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--link de css-->
     <link rel="stylesheet" href="../css/main.css">
-    <title>Piercings</title>
+    <title>Piercings - KÖrper</title>
 </head>
 <body>
     
-    <header id="irHeader">    
-        <h1 class="animate__animated animate__pulse">KÖrper</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html" class="irHome">
-                    <h2>Ir a home</h2>
-                    </a>
-                </li>
-                
-                <li class="pagPiercing"> <h2>Piercings </h2></li>
-                <li>
-                    <a href="Citas.html">
-                    <h2>Citas</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="Dudas.html">
-                    <h2>Dudas</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="TrabajosRealizados.html">
-                    <h2>Trabajos realizados </h2>
-                    </a>
-                </li>
-            </ul>  
+    <header  id="irHeader">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <h1 class="animate__animated animate__pulse">KÖRPER</h1>
+                <button 
+                class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/piercings.html">Piercings</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../pages/dudas.html">Dudas</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../pages/citas.html">Citas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/trabajosrealizados.html">Trabajos Realizados</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     
-    <div class="contenedor">       
+    <div class="contenedorP">       
         <main class="mainP">
-            <h3> <span class="subtPiercing"> Trabajamos con:</span> </h3>
-            <table>
-                <!--filas-->
-                <tr>
-                    <!--celda-->
-                    <td>
-                        <!--descripcion del titanio-->
-                        <h4>Titanio</h4>
-                            <p class="parrafoMat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quasi soluta adipisci ipsam aut debitis. Reprehenderit autem ipsum iure quam nihil iusto optio. Provident iure commodi modi consequatur nihil error</p>
-                    </td>
-                    <td>
-                        <!--descripcion del acero quirurgico-->
-                        <h4>Acero Quirurgico</h4>
-                        <p class="parrafoMat">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero culpa fugit iure accusantium soluta sapiente quisquam doloremque quis debitis fuga officia, saepe, maiores dolorum nesciunt natus? Eos delectus praesentium pariatur.</p>
-                    </td>
-                </tr>
-            </table>
+            <p class="subtP"> Trabajamos con: </p>
+            <div class="contenedorImg">
+                <img src="/img/piercing1024.png" alt="definicion de porque elegimos el titanio" class="imgP">
+            </div>
+            <p class="parrafoA">Y sino tambien podes elegir tu pieza en acero quirurgico.</p>
         </main>
-        <div class="imgP">
-            <img src="/img/piercing1024.png" alt="">
-        </div>
 
-        <section class="sectionP"> <h3> <span class="subtPiercing"> Tambien podes elegir por piezas: </span> </h3>
-            <p class="subtPiezas"> Hace click en los botones para ver mas ejemplos </p>
-                <nav>   
-                    <ul>
-                        <li class="botonP"> Barbell</li>     
-                        <li class="botonP">Nostril</li>   
-                        <li class="botonP">Clickers</li> 
-                        <li class="botonP">Bananas</li>
-                        <li class="botonP">Labrets</li>
-                        <li class="botonP">Bull</li>     
-                    </ul>
-                </nav>
+        <section class="sectionP"> <p>Pasa por el local y encontra el que mas te guste, sino te invitamos a ver algunos modelos realizados por nosotros haciendo click <a href="../pages/trabajosrealizados.html" class="link1"> aca </a> </p>
         </section>
     
     
@@ -95,5 +74,7 @@
         </footer>
     </div>
 
+    <!--link de js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
