@@ -1,4 +1,4 @@
-.mainP .subtP, .subtDudas {
+.subtDudas {
   display: inline-block;
   border-radius: 100px; }
 
@@ -15,8 +15,12 @@ header nav ul li {
 
 main p {
   text-align: center;
-  margin: 5px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 15px;
   font-family: Arial, Helvetica, sans-serif; }
+  main p span {
+    color: #cf18b1; }
 
 main .img2 {
   display: none; }
@@ -33,39 +37,86 @@ main .img5 {
 main .img1 {
   display: block;
   display: flex;
-  height: 300px;
-  margin: 5px;
+  height: 400px;
   justify-content: center; }
 
 section p {
+  margin-top: 15px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif; }
 
 footer {
+  margin-top: 15px;
   background-color: whitesmoke; }
   footer .pFooter {
     text-align: center; }
 
-.contenedorP {
-  grid-template-areas: "mainP mainP" "sectionP sectionP" "footerP footerP"; }
+@media only screen and (min-width: 600px) {
+  .mainMenu {
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "mainP mainP img1 img1" "sectionParrafo sectionParrafo img1 img1" "redesMainUno redesMainUno img1 img1" "redesMainDos redesMainDos img1 img1"; }
+  .mainP {
+    margin-top: 20px;
+    grid-area: mainP; }
+  .img1 {
+    margin-left: 60px;
+    margin-top: 20px;
+    width: 80%;
+    grid-area: img1; }
+  .sectionParrafo {
+    display: flex;
+    grid-area: sectionParrafo; }
+  .redesMainUno {
+    grid-area: redesMainUno;
+    display: flex;
+    align-items: center; }
+  .redesMainDos {
+    grid-area: redesMainDos;
+    display: flex;
+    align-items: center; } }
 
-.mainP {
-  grid-area: mainP; }
-  .mainP .subtP {
-    color: #E346DC;
-    background-color: whitesmoke;
-    font-weight: bolder;
-    text-align: start;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 25px;
-    margin-top: 20px; }
-  .mainP .parrafoA {
-    margin-top: 10px;
-    margin-left: 25px;
-    text-align: start; }
+.map {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center; }
+
+@media only screen and (min-width: 1024px) {
+  .mainMenu {
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "mainP mainP mainP mainP" "img2 img2 img3 img3" "img4 img4 img5 img5" "sectionParrafo sectionParrafo sectionParrafo sectionParrafo" "redesMainUno redesMainUno redesMainUno redesMainUno" "redesMainDos redesMainDos redesMainDos redesMainDos"; }
+  .img1 {
+    display: none; }
+  .img2 {
+    grid-area: img2;
+    display: block; }
+  .img3 {
+    grid-area: img3;
+    display: block; }
+  .img4 {
+    grid-area: img4;
+    display: block; }
+  .img5 {
+    grid-area: img5;
+    display: block; }
+  .map {
+    display: none; } }
+
+.contenedorP {
+  height: 80vh;
+  display: grid;
+  grid-template-areas: "subtPiercing subtPiercing" "sectionP sectionP" "imgPiercing imgPiercing"; }
+
+.subtPiercing {
+  grid-area: subtPiercing;
+  text-align: start; }
+  .subtPiercing span {
+    color: #cf18b1; }
 
 .sectionP {
-  text-align: start;
+  margin: 10px;
   font-family: Arial, Helvetica, sans-serif;
   grid-area: sectionP; }
   .sectionP a {
@@ -73,21 +124,30 @@ footer {
     text-decoration: none;
     color: #a25ac4; }
 
-.footerP {
-  grid-area: footerP; }
-  .footerP p {
-    text-align: center; }
-  .footerP div a {
-    text-decoration: none;
-    color: darkgray; }
-
-.contenedorImg {
+.imgPiercing {
+  grid-area: imgPiercing;
+  display: block;
   display: flex;
-  height: 480px;
+  height: 235px;
   justify-content: center; }
 
+.footerP p {
+  text-align: center; }
+
+.footerP div a {
+  text-decoration: none;
+  color: darkgray; }
+
+@media only screen and (min-width: 1024px) {
+  .contenedorP {
+    display: grid;
+    height: 80vh;
+    grid-template-areas: "subtPiercing subtPiercing" "imgPiercing imgPiercing" "sectionP sectionP"; }
+  .imgPiercing {
+    height: 300px; } }
+
 .subtDudas {
-  color: #E346DC;
+  color: #b9337def;
   background-color: whitesmoke;
   margin-left: 15px; }
 
@@ -102,7 +162,7 @@ footer {
   border-radius: 100px;
   text-decoration: none;
   color: black;
-  background-color: #cf2ccf; }
+  background-color: rgba(194, 9, 154, 0.541); }
 
 .redesW {
   margin-left: 15px;
@@ -114,14 +174,16 @@ footer {
   margin-top: 10px; }
 
 .subtCitas {
-  margin-left: 20px;
+  height: 100px;
+  margin: 20px;
   text-align: start; }
+  .subtCitas span {
+    color: #cf18b1; }
 
 .formularioC {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
-  margin-top: 20px; }
+  margin-bottom: 140px; }
 
 footer p {
   text-align: center; }
@@ -129,6 +191,3 @@ footer p {
 footer div a {
   text-decoration: none;
   color: darkgray; }
-
-.parrafoTr {
-  font-weight: bolder; }
