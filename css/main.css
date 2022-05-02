@@ -8,6 +8,11 @@ header h1 {
   background-color: #DBA1FF;
   text-align: center; }
 
+header nav .brand img {
+  justify-content: start;
+  width: 100%;
+  height: 50px; }
+
 header nav ul li {
   border-radius: 100px; }
   header nav ul li:hover {
