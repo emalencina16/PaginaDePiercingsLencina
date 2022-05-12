@@ -342,7 +342,21 @@ section{
     justify-content: center;
     margin-bottom: 140px;
 }
+.footerC{
+    height: 100px;
+    margin-top: 300px;
+    p{
+        text-align: center;
+    }
+    div{
+        a{
+            text-decoration: none;
+            color:darkgray;
+        }
+    }
+}
 
+// estilos trabajos realizados 
 .footerTr{
     height: 100px;
     margin-top: 300px;

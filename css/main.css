@@ -247,6 +247,15 @@ section p {
   justify-content: center;
   margin-bottom: 140px; }
 
+.footerC {
+  height: 100px;
+  margin-top: 300px; }
+  .footerC p {
+    text-align: center; }
+  .footerC div a {
+    text-decoration: none;
+    color: darkgray; }
+
 .footerTr {
   height: 100px;
   margin-top: 300px; }
