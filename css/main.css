@@ -60,7 +60,9 @@ footer {
   .mainMenu {
     height: 80vh;
     display: grid;
-    grid-template-areas: "mainP mainP img1 img1" "sectionParrafo sectionParrafo img1 img1" "redesMainUno redesMainUno img1 img1" "redesMainDos redesMainDos img1 img1"; }
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "mainP mainP img1 img1" "sectionParrafo sectionParrafo img1 img1" "redesMainUno redesMainUno img1 img1" "redesMainDos redesMainDos img1 img1" "map map map map"; }
   .mainP {
     margin-top: 20px;
     grid-area: mainP; }
@@ -79,13 +81,15 @@ footer {
   .redesMainDos {
     grid-area: redesMainDos;
     display: flex;
-    align-items: center; } }
-
-.map {
-  margin-top: 10px;
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: center; }
+    align-items: flex-start; }
+  .map {
+    grid-area: map;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center; }
+  footer {
+    margin-top: 320px; } }
 
 @media only screen and (min-width: 1024px) {
   .mainMenu {
@@ -93,7 +97,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "mainP mainP mainP mainP" "img2 img2 img3 img3" "img4 img4 img5 img5" "sectionParrafo sectionParrafo sectionParrafo sectionParrafo" "redesMainUno redesMainUno redesMainUno redesMainUno" "redesMainDos redesMainDos redesMainDos redesMainDos"; }
+    grid-template-areas: "mainP mainP mainP mainP" "img2 img2 img3 img3" "img4 img4 img5 img5" "sectionParrafo sectionParrafo sectionParrafo sectionParrafo" "redesMainUno redesMainUno redesMainUno redesMainUno" "redesMainDos redesMainDos redesMainDos redesMainDos" "map map map map"; }
     .mainMenu main div img {
       display: flex;
       display: block;
@@ -106,34 +110,46 @@ footer {
       grid-area: img2;
       display: block;
       display: flex;
-      height: 340px; }
+      height: 340px;
+      justify-content: center; }
     .mainMenu .img3 {
       margin: 4px;
       grid-area: img3;
       display: block;
       display: flex;
-      height: 340px; }
+      height: 340px;
+      justify-content: center; }
     .mainMenu .img4 {
       margin: 4px;
       grid-area: img4;
       display: block;
       display: flex;
-      height: 340px; }
+      height: 340px;
+      justify-content: center; }
     .mainMenu .img5 {
       margin: 4px;
       grid-area: img5;
       display: block;
       display: flex;
-      height: 340px; }
+      height: 340px;
+      justify-content: center; }
     .mainMenu .sectionParrafo {
       grid-area: sectionParrafo;
       justify-content: center; }
     .mainMenu .redesMainUno {
+      display: flex;
+      justify-content: center;
       margin-top: 30px; }
-  .map {
-    margin-top: 380px;
-    display: flex;
-    justify-content: center; } }
+    .mainMenu .redesMainDos {
+      display: flex;
+      justify-content: center; }
+    .mainMenu .map {
+      grid-area: map;
+      display: flex;
+      justify-content: center; }
+  .footer {
+    height: 100px;
+    margin-top: 800px; } }
 
 .contenedorP {
   height: 80vh;
@@ -164,12 +180,13 @@ footer {
   height: 235px;
   justify-content: center; }
 
-.footerP p {
-  text-align: center; }
-
-.footerP div a {
-  text-decoration: none;
-  color: darkgray; }
+.footerP {
+  height: 100px; }
+  .footerP p {
+    text-align: center; }
+  .footerP div a {
+    text-decoration: none;
+    color: darkgray; }
 
 @media only screen and (min-width: 1024px) {
   .contenedorP {
@@ -206,21 +223,28 @@ footer {
   text-align: start;
   margin-top: 10px; }
 
+.footerDudas {
+  height: 100px;
+  margin-top: 100px; }
+
 .subtCitas {
   height: 100px;
   margin: 20px;
-  text-align: start; }
+  text-align: center; }
   .subtCitas span {
     color: #cf18b1; }
 
 .formularioC {
   display: flex;
+  align-content: center;
   justify-content: center;
   margin-bottom: 140px; }
 
-footer p {
-  text-align: center; }
-
-footer div a {
-  text-decoration: none;
-  color: darkgray; }
+.footerC {
+  height: 100px;
+  margin-top: 300px; }
+  .footerC p {
+    text-align: center; }
+  .footerC div a {
+    text-decoration: none;
+    color: darkgray; }
