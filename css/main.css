@@ -91,23 +91,49 @@ footer {
   .mainMenu {
     height: 80vh;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "mainP mainP mainP mainP" "img2 img2 img3 img3" "img4 img4 img5 img5" "sectionParrafo sectionParrafo sectionParrafo sectionParrafo" "redesMainUno redesMainUno redesMainUno redesMainUno" "redesMainDos redesMainDos redesMainDos redesMainDos"; }
-  .img1 {
-    display: none; }
-  .img2 {
-    grid-area: img2;
-    display: block; }
-  .img3 {
-    grid-area: img3;
-    display: block; }
-  .img4 {
-    grid-area: img4;
-    display: block; }
-  .img5 {
-    grid-area: img5;
-    display: block; }
+    .mainMenu main div img {
+      display: flex;
+      display: block;
+      height: 250px;
+      width: 50%; }
+    .mainMenu .img1 {
+      display: none; }
+    .mainMenu .img2 {
+      margin: 4px;
+      grid-area: img2;
+      display: block;
+      display: flex;
+      height: 340px; }
+    .mainMenu .img3 {
+      margin: 4px;
+      grid-area: img3;
+      display: block;
+      display: flex;
+      height: 340px; }
+    .mainMenu .img4 {
+      margin: 4px;
+      grid-area: img4;
+      display: block;
+      display: flex;
+      height: 340px; }
+    .mainMenu .img5 {
+      margin: 4px;
+      grid-area: img5;
+      display: block;
+      display: flex;
+      height: 340px; }
+    .mainMenu .sectionParrafo {
+      grid-area: sectionParrafo;
+      justify-content: center; }
+    .mainMenu .redesMainUno {
+      margin-top: 30px; }
   .map {
-    display: none; } }
+    margin-top: 380px;
+    display: flex;
+    justify-content: center; } }
 
 .contenedorP {
   height: 80vh;
@@ -115,12 +141,14 @@ footer {
   grid-template-areas: "subtPiercing subtPiercing" "sectionP sectionP" "imgPiercing imgPiercing"; }
 
 .subtPiercing {
+  margin-top: 10px;
   grid-area: subtPiercing;
   text-align: start; }
   .subtPiercing span {
     color: #cf18b1; }
 
 .sectionP {
+  text-align: center;
   margin: 10px;
   font-family: Arial, Helvetica, sans-serif;
   grid-area: sectionP; }

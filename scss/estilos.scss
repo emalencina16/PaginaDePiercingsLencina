@@ -127,37 +127,64 @@ footer{
     .mainMenu{
         height: 80vh;
         display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-areas: "mainP mainP mainP mainP"
                             "img2 img2 img3 img3"
                             "img4 img4 img5 img5"
                             "sectionParrafo sectionParrafo sectionParrafo sectionParrafo"
                             "redesMainUno redesMainUno redesMainUno redesMainUno"
                             "redesMainDos redesMainDos redesMainDos redesMainDos";
+    main div img{
+        display: flex;
+        display: block;
+        height: 250px;
+        width: 50%;
     }
-    //AYUDA -> no puedo arreglar esta parte, la img1 no desaparece y tampoco me aparecen las otras, nose porque
     .img1{
         display: none;
     }
-
     .img2{
+        margin: 4px;
         grid-area: img2;
         display: block;
+        display: flex;
+        height: 340px;
     }
     .img3{
+        margin: 4px;
         grid-area: img3;
         display: block;
+        display: flex;
+        height: 340px;
     }
     .img4{
+        margin: 4px;
         grid-area: img4;
         display: block;
+        display: flex;
+        height: 340px;
     }
     .img5{
+        margin: 4px;
         grid-area: img5;
         display: block;
+        display: flex;
+        height: 340px;
+    }
+    .sectionParrafo{
+        grid-area: sectionParrafo;
+        justify-content: center;
+    }
+    .redesMainUno{
+        margin-top: 30px;
+    }
     }
 
     .map{
-        display: none;
+        margin-top: 380px;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -172,6 +199,7 @@ footer{
 }
 
 .subtPiercing{
+    margin-top: 10px;
     grid-area: subtPiercing;
     text-align: start;
     span{
@@ -180,6 +208,7 @@ footer{
 }
 
 .sectionP{
+    text-align: center;
     margin: 10px;
     font-family: $fuente-general;
     grid-area: sectionP;
