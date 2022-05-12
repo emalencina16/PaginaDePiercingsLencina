@@ -50,11 +50,13 @@ section p {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif; }
 
-footer {
-  margin-top: 15px;
-  background-color: whitesmoke; }
-  footer .pFooter {
+.footerIndex {
+  margin-top: 15px; }
+  .footerIndex p {
     text-align: center; }
+  .footerIndex div a {
+    text-decoration: none;
+    color: darkgray; }
 
 @media only screen and (min-width: 600px) {
   .mainMenu {
@@ -88,7 +90,7 @@ footer {
     margin-bottom: 50px;
     display: flex;
     justify-content: center; }
-  footer {
+  .footerIndex {
     margin-top: 320px; } }
 
 @media only screen and (min-width: 1024px) {
@@ -147,7 +149,7 @@ footer {
       grid-area: map;
       display: flex;
       justify-content: center; }
-  .footer {
+  .footerIndex {
     height: 100px;
     margin-top: 800px; } }
 
@@ -226,6 +228,11 @@ footer {
 .footerDudas {
   height: 100px;
   margin-top: 100px; }
+  .footerDudas p {
+    text-align: center; }
+  .footerDudas div a {
+    text-decoration: none;
+    color: darkgray; }
 
 .subtCitas {
   height: 100px;
@@ -240,11 +247,11 @@ footer {
   justify-content: center;
   margin-bottom: 140px; }
 
-.footerC {
+.footerTr {
   height: 100px;
   margin-top: 300px; }
-  .footerC p {
+  .footerTr p {
     text-align: center; }
-  .footerC div a {
+  .footerTr div a {
     text-decoration: none;
     color: darkgray; }

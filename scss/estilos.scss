@@ -67,11 +67,16 @@ section{
         font-family: $fuente-general;
     }
 }
-footer{
+.footerIndex{
     margin-top: 15px;
-    background-color: whitesmoke;
-    .pFooter{
+    p{
         text-align: center;
+    }
+    div{
+        a{
+            text-decoration: none;
+            color:darkgray;
+        }
     }
 }
 
@@ -122,7 +127,7 @@ footer{
         display: flex;
         justify-content: center;
     }
-    footer{
+    .footerIndex{
         margin-top: 320px;
     }
 }
@@ -200,7 +205,7 @@ footer{
         justify-content: center;
     }
     }
-    .footer{
+    .footerIndex{
         height: 100px;
         margin-top: 800px;
     }
@@ -309,6 +314,15 @@ footer{
 .footerDudas{
     height: 100px;
     margin-top: 100px;
+    p{
+        text-align: center;
+    }
+    div{
+        a{
+            text-decoration: none;
+            color:darkgray;
+        }
+    }
 }
 
 // estilos pagina citas
@@ -329,7 +343,7 @@ footer{
     margin-bottom: 140px;
 }
 
-.footerC{
+.footerTr{
     height: 100px;
     margin-top: 300px;
     p{
